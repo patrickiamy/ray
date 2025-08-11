@@ -99,6 +99,7 @@ struct CallOptions {
   PlacementGroup group;
   int bundle_index;
   std::string serialized_runtime_env_info;
+  int max_retries;
 };
 
 struct ActorCreationOptions {
