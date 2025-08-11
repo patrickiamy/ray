@@ -56,6 +56,10 @@ class TaskCaller {
     task_options_.serialized_runtime_env_info = runtime_env.SerializeToRuntimeEnvInfo();
     return *this;
   }
+  TaskCaller &SetMaxRetries(int max_retries) {
+    task_options_.max_retries = max_retries;
+    return *this;
+  }
 
  private:
   RayRuntime *runtime_;
